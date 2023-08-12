@@ -19,8 +19,8 @@ class FifthTableViewCell: UITableViewCell {
         fifthCollectionView.delegate = self
         fifthCollectionView.dataSource = self
         configureData()
-        collectionViewTasarim()
-        //configureLayout()
+        //collectionViewTasarim()
+        configureLayout()
         customNibs()
     }
 
@@ -29,19 +29,17 @@ class FifthTableViewCell: UITableViewCell {
     }
     
     func configureData() {
-        let m1 = Music(musicName: "Zirvedekiler: Türkçe Pop", artistName: "Apple Music: Pop", image: "3.1")
-        let m2 = Music(musicName: "Bugünün Hit'leri", artistName: "Apple Music: Hit'ler", image: "3.2")
-        let m3 = Music(musicName: "Zirvedekiler: Türkiye", artistName: "Apple Music: Pop", image: "3.3")
-        let m4 = Music(musicName: "Shazam Stars", artistName: "Apple Music", image: "3.4")
-        let m5 = Music(musicName: "Yarının Hit'leri", artistName: "Apple Music", image: "3.5")
-        let m6 = Music(musicName: "Günün Yenileri", artistName: "Apple Music", image: "3.6")
-        
+        let m1 = Music(musicName: "Gazino", artistName: "Gazino Kültürünün ışıltılı atmosferinde, sahne farklı türlerin.", image: "3.7")
+        let m2 = Music(musicName: "Shazam Stars", artistName: "Yükselişteki sanatçılar, yarının yıldızları ve çok daha fazlası.", image: "3.4")
+        let m3 = Music(musicName: "Yaz Partisi", artistName: "Yüksek Tempolu yazın Hit'leri ile partiye ışınlan!", image: "3.9")
+        let m4 = Music(musicName: "Günün Yenileri", artistName: "Haftanın şarkısı KAROL G'den Mi Ex Tenia Razon, Uzamnsal Ses'te.", image: "3.6")
+        let m5 = Music(musicName: "Yeniden Dinle: Türkçe Rap", artistName: "Türün en yeni hit'lerinden özenle oluşturulmuş bir koleksiyon.", image: "3.10")
         musicList.append(m1)
         musicList.append(m2)
         musicList.append(m3)
         musicList.append(m4)
         musicList.append(m5)
-        musicList.append(m6)
+    
     }
     
     func collectionViewTasarim(){
@@ -59,15 +57,15 @@ class FifthTableViewCell: UITableViewCell {
     
     func configureLayout() {
         
-        let tasarim = UICollectionViewFlowLayout()
-        tasarim.scrollDirection = .horizontal
-        tasarim.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-        tasarim.minimumInteritemSpacing = 0
-        tasarim.minimumLineSpacing = 0
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        layout.minimumInteritemSpacing = 10
+        layout.minimumLineSpacing = 0
         let hucreGenisligi = fifthCollectionView.bounds.width
         let hucreUzunlugu = fifthCollectionView.bounds.height
-        tasarim.itemSize = CGSize(width: hucreGenisligi/2, height: hucreUzunlugu)
-        fifthCollectionView.collectionViewLayout = tasarim
+        layout.itemSize = CGSizeMake(hucreGenisligi-20, hucreUzunlugu*1.7)
+        fifthCollectionView.collectionViewLayout = layout
         
     }
     

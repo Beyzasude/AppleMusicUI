@@ -10,51 +10,51 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="fifthCollectionViewCell" id="gTV-IL-0wX" customClass="FifthCollectionViewCell" customModule="AppleMusicDesing" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="206" height="172"/>
+            <rect key="frame" x="0.0" y="0.0" width="273" height="264"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="206" height="172"/>
+                <rect key="frame" x="0.0" y="0.0" width="273" height="264"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.3" translatesAutoresizingMaskIntoConstraints="NO" id="LWr-OF-0Gi">
-                        <rect key="frame" x="43" y="5" width="120" height="120"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="120" id="f70-4T-jlo"/>
-                            <constraint firstAttribute="height" constant="120" id="rLh-N6-G8A"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zirvedekiler: Türkçe Pop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBg-4n-hmM">
-                        <rect key="frame" x="0.0" y="130" width="206" height="14.333333333333343"/>
+                        <rect key="frame" x="0.0" y="190" width="273" height="14.333333333333343"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Music: Pop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKF-p4-LHQ">
-                        <rect key="frame" x="0.0" y="149.33333333333334" width="206" height="14.333333333333343"/>
+                        <rect key="frame" x="0.0" y="209.33333333333334" width="273" height="14.333333333333343"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.3" translatesAutoresizingMaskIntoConstraints="NO" id="LWr-OF-0Gi">
+                        <rect key="frame" x="0.0" y="6" width="273" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="273" id="f70-4T-jlo"/>
+                            <constraint firstAttribute="height" constant="180" id="rLh-N6-G8A"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="LWr-OF-0Gi" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="0RZ-0a-16p"/>
-                <constraint firstItem="LWr-OF-0Gi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="K0f-h8-tJI"/>
+                <constraint firstItem="LWr-OF-0Gi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="K0f-h8-tJI"/>
                 <constraint firstAttribute="trailing" secondItem="YKF-p4-LHQ" secondAttribute="trailing" id="Ohi-r7-L8u"/>
+                <constraint firstItem="LWr-OF-0Gi" firstAttribute="centerX" secondItem="jBg-4n-hmM" secondAttribute="centerX" id="YyB-o1-QkO"/>
                 <constraint firstItem="YKF-p4-LHQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cf5-sf-Y8n"/>
                 <constraint firstItem="YKF-p4-LHQ" firstAttribute="top" secondItem="jBg-4n-hmM" secondAttribute="bottom" constant="5" id="pI5-CT-STe"/>
-                <constraint firstItem="jBg-4n-hmM" firstAttribute="top" secondItem="LWr-OF-0Gi" secondAttribute="bottom" constant="5" id="u9X-Ta-jOt"/>
+                <constraint firstItem="jBg-4n-hmM" firstAttribute="top" secondItem="LWr-OF-0Gi" secondAttribute="bottom" constant="4" id="u9X-Ta-jOt"/>
                 <constraint firstItem="jBg-4n-hmM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vyO-4m-Nh4"/>
                 <constraint firstAttribute="trailing" secondItem="jBg-4n-hmM" secondAttribute="trailing" id="zWf-b6-VQh"/>
             </constraints>
-            <size key="customSize" width="206" height="172"/>
+            <size key="customSize" width="273" height="264"/>
             <connections>
                 <outlet property="imgView" destination="LWr-OF-0Gi" id="vXr-0Z-S4a"/>
                 <outlet property="lblArtistName" destination="YKF-p4-LHQ" id="XOM-ia-49G"/>
                 <outlet property="lblMusicName" destination="jBg-4n-hmM" id="359-Am-vg5"/>
             </connections>
-            <point key="canvasLocation" x="158.77862595419847" y="44.366197183098592"/>
+            <point key="canvasLocation" x="301.52671755725191" y="77.464788732394368"/>
         </collectionViewCell>
     </objects>
     <resources>
