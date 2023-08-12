@@ -18,9 +18,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XAy-eN-LCf">
-                                <rect key="frame" x="0.0" y="155" width="393" height="565"/>
+                                <rect key="frame" x="0.0" y="155" width="393" height="697"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <view alpha="0.94999999999999996" contentMode="scaleToFill" ambiguous="YES" id="4CW-oT-Stn">
+                                <rect key="frame" x="0.0" y="707" width="393" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4.5" translatesAutoresizingMaskIntoConstraints="NO" id="N99-WS-CcO">
+                                        <rect key="frame" x="20" y="5" width="70" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="cRF-3N-oGm"/>
+                                            <constraint firstAttribute="width" constant="70" id="q5M-qu-dLI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgC-j8-ARj">
+                                        <rect key="frame" x="285" y="15" width="44" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6c-wN-tju">
+                                        <rect key="frame" x="328" y="15" width="56" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sakinleştim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S96-qy-McM">
+                                        <rect key="frame" x="98" y="22" width="87" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="N99-WS-CcO" firstAttribute="top" secondItem="4CW-oT-Stn" secondAttribute="top" constant="5" id="83u-yT-Wrd"/>
+                                    <constraint firstAttribute="bottom" secondItem="N99-WS-CcO" secondAttribute="bottom" constant="10" id="IZe-aa-Luq"/>
+                                    <constraint firstItem="N99-WS-CcO" firstAttribute="leading" secondItem="4CW-oT-Stn" secondAttribute="leading" constant="20" id="KV5-Q7-nF9"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -28,7 +68,7 @@
                             <constraint firstItem="XAy-eN-LCf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="42b-IA-Lzr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XAy-eN-LCf" secondAttribute="trailing" id="8tC-ny-Mnf"/>
                             <constraint firstItem="XAy-eN-LCf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eJZ-nL-raw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XAy-eN-LCf" secondAttribute="bottom" id="eoq-Bn-JQH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XAy-eN-LCf" secondAttribute="bottom" constant="-132" id="eoq-Bn-JQH"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -45,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1361" y="708"/>
+            <point key="canvasLocation" x="1359.5419847328244" y="707.04225352112678"/>
         </scene>
         <!--Şimdi Dinle-->
         <scene sceneID="f6m-vr-03s">
@@ -89,7 +129,7 @@
                         <viewLayoutGuide key="safeArea" id="hRe-E2-DMC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Arşiv" image="play.square.stack.fill" selectedImage="play.square.stack.fill" catalog="system" id="E4H-Qn-dz2"/>
+                    <tabBarItem key="tabBarItem" title="Arşiv" image="play.square.stack.fill" catalog="system" selectedImage="play.square.stack.fill" id="E4H-Qn-dz2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJ6-L7-46q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,7 +145,7 @@
                         <viewLayoutGuide key="safeArea" id="BO0-vn-r8N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ara" image="magnifyingglass" selectedImage="magnifyingglass" catalog="system" id="eiy-aO-nJn"/>
+                    <tabBarItem key="tabBarItem" title="Ara" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="eiy-aO-nJn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLd-Bt-zhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,9 +157,11 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8zp-C2-uw4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YAZ-X0-lGo">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="systemPinkColor"/>
+                        <color key="barTintColor" systemColor="secondarySystemBackgroundColor"/>
                         <color key="selectedImageTintColor" systemColor="systemPinkColor"/>
                     </tabBar>
                     <connections>
@@ -155,14 +197,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="4.5" width="274" height="273"/>
         <image name="dot.radiowaves.left.and.right" catalog="system" width="128" height="91"/>
-        <image name="magnifyingglass" width="128" height="128"/>
+        <image name="forward.fill" catalog="system" width="128" height="77"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <image name="play.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="play.square.stack.fill" width="128" height="128"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
         <image name="play.square.stack.fill" catalog="system" width="112" height="128"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

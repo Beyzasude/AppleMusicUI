@@ -18,7 +18,8 @@ class FourthTableViewCell: UITableViewCell {
         fourthCollectionView.delegate = self
         fourthCollectionView.dataSource = self
         configureData()
-        configureLayout()
+        collectionViewTasarim()
+       // configureLayout()
         customNibs()
     }
 
@@ -43,6 +44,19 @@ class FourthTableViewCell: UITableViewCell {
         musicList.append(m6)
         musicList.append(m7)
         musicList.append(m8)
+    }
+    
+    func collectionViewTasarim(){
+        let tasarim = UICollectionViewFlowLayout()
+        tasarim.scrollDirection = .horizontal
+        tasarim.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        tasarim.minimumInteritemSpacing = 0 // yatay
+        tasarim.minimumLineSpacing = 0 // dikey
+        print(fourthCollectionView.bounds.width, fourthCollectionView.bounds.height )
+        let hucreGenisligi = fourthCollectionView.bounds.width - 35
+        let hucreUzunlugu = (fourthCollectionView.bounds.height)/2
+        tasarim.itemSize = CGSize(width: hucreGenisligi, height: hucreUzunlugu)
+        fourthCollectionView.collectionViewLayout = tasarim
     }
     
     func configureLayout() {
