@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="firstCollectionViewCell" id="gTV-IL-0wX" userLabel="First Collection View Cell" customClass="FirstCollectionViewCell" customModule="AppleMusicDesing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="266"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="266"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EN POPÜLER LİSTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdr-po-vep">
+                        <rect key="frame" x="0.0" y="9" width="325" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zirvedekiler: Türkçe Pop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFE-SL-iRh">
+                        <rect key="frame" x="0.0" y="26" width="325" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="m4q-C8-5YQ">
+                        <rect key="frame" x="0.0" y="76" width="325" height="182"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Music: Pop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzV-Az-1i8">
+                        <rect key="frame" x="0.0" y="51" width="325" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qdr-po-vep" secondAttribute="trailing" id="3R4-zP-ZFA"/>
+                <constraint firstItem="Qdr-po-vep" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="9" id="7Oy-dt-zta"/>
+                <constraint firstAttribute="trailing" secondItem="m4q-C8-5YQ" secondAttribute="trailing" id="7jy-JY-zYl"/>
+                <constraint firstItem="m4q-C8-5YQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8YC-3G-GSe"/>
+                <constraint firstAttribute="trailing" secondItem="vzV-Az-1i8" secondAttribute="trailing" id="HyU-yp-pt4"/>
+                <constraint firstAttribute="trailing" secondItem="zFE-SL-iRh" secondAttribute="trailing" id="JK5-pd-NWD"/>
+                <constraint firstItem="zFE-SL-iRh" firstAttribute="top" secondItem="Qdr-po-vep" secondAttribute="bottom" constant="5" id="KKC-Eg-sUk"/>
+                <constraint firstItem="zFE-SL-iRh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N4V-Hq-Bb4"/>
+                <constraint firstItem="vzV-Az-1i8" firstAttribute="top" secondItem="zFE-SL-iRh" secondAttribute="bottom" constant="5" id="Yjw-gP-SEm"/>
+                <constraint firstItem="Qdr-po-vep" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m0m-uo-UdZ"/>
+                <constraint firstItem="m4q-C8-5YQ" firstAttribute="top" secondItem="vzV-Az-1i8" secondAttribute="bottom" constant="5" id="rK3-Bb-cXn"/>
+                <constraint firstItem="vzV-Az-1i8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tuE-XX-a9h"/>
+                <constraint firstAttribute="bottom" secondItem="m4q-C8-5YQ" secondAttribute="bottom" constant="8" id="uzS-uj-QHK"/>
+            </constraints>
+            <size key="customSize" width="325" height="266"/>
+            <connections>
+                <outlet property="imgView" destination="m4q-C8-5YQ" id="E8n-Qv-Naw"/>
+                <outlet property="lblFirst" destination="Qdr-po-vep" id="XZk-k3-bqD"/>
+                <outlet property="lblSecond" destination="zFE-SL-iRh" id="AT2-1T-FU0"/>
+                <outlet property="lblThird" destination="vzV-Az-1i8" id="vKV-dp-GXx"/>
+            </connections>
+            <point key="canvasLocation" x="266.41221374045801" y="-1.4084507042253522"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="1043" height="698"/>
+    </resources>
+</document>
