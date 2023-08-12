@@ -66,7 +66,7 @@ class FifthTableViewCell: UITableViewCell {
         tasarim.minimumLineSpacing = 0
         let hucreGenisligi = fifthCollectionView.bounds.width
         let hucreUzunlugu = fifthCollectionView.bounds.height
-        /Users/beyzasudeerol/Desktop/Bootcamps/UPSchool Bootcamp/AppleMusicDesing/AppleMusicDesing/CustomCell/FifthTableViewCell/FifthTableViewCell.xib  tasarim.itemSize = CGSize(width: hucreGenisligi/2, height: hucreUzunlugu)
+        tasarim.itemSize = CGSize(width: hucreGenisligi/2, height: hucreUzunlugu)
         fifthCollectionView.collectionViewLayout = tasarim
         
     }
