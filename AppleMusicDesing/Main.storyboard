@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XAy-eN-LCf">
-                                <rect key="frame" x="0.0" y="155" width="393" height="544"/>
+                                <rect key="frame" x="0.0" y="155" width="393" height="697"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <view alpha="0.95999999999999996" contentMode="scaleToFill" ambiguous="YES" id="4CW-oT-Stn">
+                            <view alpha="0.96999999999999997" tag="1" contentMode="scaleToFill" ambiguous="YES" id="4CW-oT-Stn">
                                 <rect key="frame" x="0.0" y="707" width="393" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -54,7 +54,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstItem="N99-WS-CcO" firstAttribute="top" secondItem="4CW-oT-Stn" secondAttribute="top" constant="5" id="83u-yT-Wrd"/>
                                     <constraint firstAttribute="bottom" secondItem="N99-WS-CcO" secondAttribute="bottom" constant="10" id="IZe-aa-Luq"/>
@@ -68,7 +68,7 @@
                             <constraint firstItem="XAy-eN-LCf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="42b-IA-Lzr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XAy-eN-LCf" secondAttribute="trailing" id="8tC-ny-Mnf"/>
                             <constraint firstItem="XAy-eN-LCf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eJZ-nL-raw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XAy-eN-LCf" secondAttribute="bottom" constant="21" id="eoq-Bn-JQH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XAy-eN-LCf" secondAttribute="bottom" constant="-132" id="eoq-Bn-JQH"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

@@ -28,11 +28,11 @@ class TableViewCell: UITableViewCell {
     }
     
     func configureData() {
-        let m1 = FirstMusic(musicDetail: "EN POPÜLER LİSTE", category: "Zirvedekiler: Türkçe Pop", appleMusic: "Apple Music: Pop", image: "1")
-        let m2 = FirstMusic(musicDetail: "ŞİMDİ DİNLE", category: "Zirvedekiler: Türkçe Rap", appleMusic: "Apple Music: Hip-Hop/Rap", image: "2")
-        let m3 = FirstMusic(musicDetail: "HAFTA'NIN SINGLE'I", category: "İHYA - Single", appleMusic: "KARDELEN", image: "3")
-        let m4 = FirstMusic(musicDetail: "YILDIZI PARLAYANLAR", category: "Türkiye'nin Yıldızlarını Keşfet", appleMusic: "", image: "4")
-        let m5 = FirstMusic(musicDetail: "UZAMSAL SESTE YENİ", category: "NAYLON - Single", appleMusic: "Lil Zey", image: "5")
+        let m1 = FirstMusic(musicDetail: "EN POPÜLER LİSTE", category: "Zirvedekiler: Türkçe Pop", appleMusic: "Apple Music: Pop", image: "1.1")
+        let m2 = FirstMusic(musicDetail: "ŞİMDİ DİNLE", category: "Zirvedekiler: Türkçe Rap", appleMusic: "Apple Music: Hip-Hop/Rap", image: "1.2")
+        let m3 = FirstMusic(musicDetail: "HAFTA'NIN SINGLE'I", category: "İHYA - Single", appleMusic: "KARDELEN", image: "1.3")
+        let m4 = FirstMusic(musicDetail: "YILDIZI PARLAYANLAR", category: "Türkiye'nin Yıldızlarını Keşfet", appleMusic: " ", image: "1.4")
+        let m5 = FirstMusic(musicDetail: "UZAMSAL SESTE YENİ", category: "NAYLON - Single", appleMusic: "Lil Zey", image: "1.5")
         musicList.append(m1)
         musicList.append(m2)
         musicList.append(m3)

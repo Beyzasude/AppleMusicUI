@@ -73,7 +73,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return UITableViewCell()
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 260
+        return 250
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
