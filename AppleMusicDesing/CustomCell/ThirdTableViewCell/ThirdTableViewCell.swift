@@ -33,52 +33,45 @@ class ThirdTableViewCell: UITableViewCell {
         let m3 = Music(musicName: "Zirvedekiler: Türkiye", artistName: "Apple Music: Pop", image: "3.3")
         let m4 = Music(musicName: "Shazam Stars", artistName: "Apple Music", image: "3.4")
         let m5 = Music(musicName: "Yarının Hit'leri", artistName: "Apple Music", image: "3.5")
+        let m6 = Music(musicName: "Günün Yenileri", artistName: "Apple Music", image: "3.6")
+        let m7 = Music(musicName: "Gazino", artistName: "Apple Music", image: "3.7")
+        let m8 = Music(musicName: "Yepyeni: Türkçe Pop", artistName: "Apple Music: Pop", image: "3.8")
         
         musicList.append(m1)
         musicList.append(m2)
         musicList.append(m3)
         musicList.append(m4)
         musicList.append(m5)
+        musicList.append(m6)
+        musicList.append(m7)
+        musicList.append(m8)
     }
     
     func configureLayout() {
         
+         let layout = UICollectionViewFlowLayout()
+         layout.scrollDirection = .horizontal
+         layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+         layout.minimumInteritemSpacing = 10
+         layout.minimumLineSpacing = 10
+         let hucreGenisligi = thirdCollectionView.bounds.width
+         let hucreUzunlugu = thirdCollectionView.bounds.height
+         layout.itemSize = CGSizeMake(hucreGenisligi/1.8, hucreUzunlugu)
+         thirdCollectionView.collectionViewLayout = layout
+         
+        
+        
         /*let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-        layout.minimumInteritemSpacing = 10
-        layout.minimumLineSpacing = 10
-        layout.scrollDirection = .horizontal
-        let screenWidth = UIScreen.main.bounds.width
-        let itemWidth = (screenWidth - 16) / 1
-        layout.itemSize = CGSize(width: itemWidth , height: itemWidth/2)
-        thirdCollectionView.collectionViewLayout = layout
-        */
-        
-        
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-        layout.minimumInteritemSpacing = 10
-        layout.minimumLineSpacing = 10
-        let hucreGenisligi = thirdCollectionView.bounds.width
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        print("burasıı",thirdCollectionView.bounds.width,thirdCollectionView.bounds.height)
+        let hucreGenisligi = (thirdCollectionView.bounds.width - 10)
         let hucreUzunlugu = thirdCollectionView.bounds.height
-        layout.itemSize = CGSizeMake(hucreGenisligi/1.8, hucreUzunlugu)
+        layout.itemSize = CGSizeMake(120, 120)
         thirdCollectionView.collectionViewLayout = layout
-        
-         
-         
-        /*let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-        layout.minimumInteritemSpacing = 10
-        layout.minimumLineSpacing = 10
-        layout.scrollDirection = .horizontal
-        let screenWidth = UIScreen.main.bounds.width
-        let itemWidth = (screenWidth - 20) / 2
-        layout.itemSize = CGSize(width: itemWidth , height: itemWidth)
-        thirdCollectionView.collectionViewLayout = layout
-        */
+    */
     }
     
     func customNibs() {

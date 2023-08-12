@@ -31,6 +31,9 @@ class ViewController: UIViewController {
         
         let fourthCustomCellNib: UINib = UINib(nibName: "FourthTableViewCell", bundle: nil)
         tableView.register(fourthCustomCellNib, forCellReuseIdentifier: "fourthTableViewCell")
+        
+        let fifthCustomCellNib: UINib = UINib(nibName: "FifthTableViewCell", bundle: nil)
+        tableView.register(fifthCustomCellNib, forCellReuseIdentifier: "fifthTableViewCell")
     }
 
 
@@ -57,8 +60,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 return cell3
             }
         }else if indexPath.section == 3 {
-            if let cell4 = tableView.dequeueReusableCell(withIdentifier: "fourthTableViewCell", for: indexPath) as? TableViewCell {
+            if let cell4 = tableView.dequeueReusableCell(withIdentifier: "fourthTableViewCell", for: indexPath) as? FourthTableViewCell {
                 return cell4
+            }
+        }
+        else if indexPath.section == 4 {
+            if let cell5 = tableView.dequeueReusableCell(withIdentifier: "fifthTableViewCell", for: indexPath) as? FifthTableViewCell {
+                cell5.sectionHeaderLabel.text = "Her Zaman Yanında"
+                return cell5
             }
         }
         return UITableViewCell()
@@ -68,7 +77,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 5
     }
     
 }
