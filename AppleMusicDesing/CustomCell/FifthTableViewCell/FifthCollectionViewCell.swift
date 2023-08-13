@@ -15,7 +15,7 @@ class FifthCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imgView.layer.cornerRadius = 10
+        imgView.layer.cornerRadius = 15
     }
 
 }

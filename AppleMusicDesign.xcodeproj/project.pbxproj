@@ -38,7 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2334B9452A85042600A99A05 /* AppleMusicDesing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicDesing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2334B9452A85042600A99A05 /* AppleMusicDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2334B9482A85042600A99A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2334B94A2A85042600A99A05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2334B94C2A85042600A99A05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		2334B9462A85042600A99A05 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2334B9452A85042600A99A05 /* AppleMusicDesing.app */,
+				2334B9452A85042600A99A05 /* AppleMusicDesign.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,9 +192,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2334B9442A85042600A99A05 /* AppleMusicDesing */ = {
+		2334B9442A85042600A99A05 /* AppleMusicDesign */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2334B9592A85042700A99A05 /* Build configuration list for PBXNativeTarget "AppleMusicDesing" */;
+			buildConfigurationList = 2334B9592A85042700A99A05 /* Build configuration list for PBXNativeTarget "AppleMusicDesign" */;
 			buildPhases = (
 				2334B9412A85042600A99A05 /* Sources */,
 				2334B9422A85042600A99A05 /* Frameworks */,
@@ -204,9 +204,9 @@
 			);
 			dependencies = (
 			);
-			name = AppleMusicDesing;
+			name = AppleMusicDesign;
 			productName = AppleMusicDesing;
-			productReference = 2334B9452A85042600A99A05 /* AppleMusicDesing.app */;
+			productReference = 2334B9452A85042600A99A05 /* AppleMusicDesign.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -224,7 +224,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2334B9402A85042600A99A05 /* Build configuration list for PBXProject "AppleMusicDesing" */;
+			buildConfigurationList = 2334B9402A85042600A99A05 /* Build configuration list for PBXProject "AppleMusicDesign" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -237,7 +237,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2334B9442A85042600A99A05 /* AppleMusicDesing */,
+				2334B9442A85042600A99A05 /* AppleMusicDesign */,
 			);
 		};
 /* End PBXProject section */
@@ -473,7 +473,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2334B9402A85042600A99A05 /* Build configuration list for PBXProject "AppleMusicDesing" */ = {
+		2334B9402A85042600A99A05 /* Build configuration list for PBXProject "AppleMusicDesign" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2334B9572A85042700A99A05 /* Debug */,
@@ -482,7 +482,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2334B9592A85042700A99A05 /* Build configuration list for PBXNativeTarget "AppleMusicDesing" */ = {
+		2334B9592A85042700A99A05 /* Build configuration list for PBXNativeTarget "AppleMusicDesign" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2334B95A2A85042700A99A05 /* Debug */,
